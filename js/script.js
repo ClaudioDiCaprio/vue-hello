@@ -12,8 +12,15 @@ const app = new Vue({
     },
     methods:{
         change:function(){
-            this.mine="blue";
-            this.bo ='border_'
+            // this.mine="blue";
+            
+            if(this.mine == "red"){
+                this.mine ="blue"
+                this.bo ='border_'
+            }else{
+                this.mine = 'red'
+                this.bo = 'border'
+            }
         }
     }    
 
