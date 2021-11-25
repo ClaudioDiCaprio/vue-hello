@@ -8,10 +8,10 @@
     <title>HELLO-VUE</title>
 </head>
 <body>
-    <div class="" id="root">
-        <h1>{{message}}</h1>
-        <img :src="thisImage" alt="it but_it_does">
-        
+    <div :class="set" id="root">
+        <h1 :class="mine">{{message}}</h1>
+        <img :class="bo" :src="thisImage" :alt="thisAlt">
+        <button class="oi" @click="change">Click me</button>
     </div>
     
     <!-- development version, includes helpful console warnings -->

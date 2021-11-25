@@ -5,12 +5,16 @@ const app = new Vue({
     data :{
         message:'Hello Vue',
         thisImage:'img/but_it_does.png',
-
+        thisAlt:'it but_it_does',
+        mine:'red',
+        set:'isSet',
+        bo:'border'
     },
-    // methods:{
-    //     saluta:function(){
-            
-    //     }
-    // }    
+    methods:{
+        change:function(){
+            this.mine="blue";
+            this.bo ='border_'
+        }
+    }    
 
 });
